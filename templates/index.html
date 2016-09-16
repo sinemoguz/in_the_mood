@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>In the Mood</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<div class="container-full">
+		<div class="text-center v-center-more center-block max-size">
+			<h1>In the Mood</h1>
+			<p class="lead">Weather affects your mood.Find mood-dependent places from others' tips!</p>
+			<br/>
+			<div class="input-group h-space">
+				<input type="text" class="form-control input-lg" id="search-input" placeholder="Search City"/>
+				<span class="input-group-btn"><button class="btn btn-lg btn-primary" onclick="loadMap()" type="button">Search</button></span>
+			</div>
+			<div class="lead v-center-less h-space" id="weather-w"></div>
+			<div class="lead v-center-less h-space" id="stats-status"></div>
+			<div class="v-center-less h-space" id="map"></div>
+		</div>
+	</div>
+	<div class="modal"></div>
+	<script type="text/javascript" src="static/js/index.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFjkxTDAJeEvIKBN_fTT3qXziJXUJ2Sa0"></script>
+</body>
+</html>

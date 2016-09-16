@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Antic+Slab);
+
+html,body {
+  height:100%;
+}
+
+h1 {
+  font-family: 'Antic Slab', serif;
+  font-size:80px;
+  color:#DDCCEE;
+}
+
+.lead {
+  color:#DDCCEE;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  min-height:100%;
+  background-color:#110022;
+  color:#eee;
+  overflow:hidden;
+}
+
+.container-full a {
+  color:#efefef;
+  text-decoration:none;
+}
+
+.max-size {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.v-center-more {
+  margin-top:7%;
+}
+
+.v-center-less {
+  margin-top:3%;
+}
+
+.h-space {
+  margin-right:3%;
+  margin-left:3%;
+}
+
+.modal {
+  display:    none;
+  position:   fixed;
+  z-index:    1000;
+  top:        0;
+  left:       0;
+  height:     100%;
+  wdth:      100%;
+  background: url('http://i.stack.imgur.com/FhHRx.gif') 
+              50% 50% 
+              no-repeat;
+}
+
+body.loading {
+  overflow: hidden;   
+}
+
+body.loading .modal {
+  display: block;
+}
